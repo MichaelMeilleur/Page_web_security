@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/vendor/bootstrap.css" rel="stylesheet" />
+    <link href="css/vendor/font-awesome.css" rel="stylesheet" />
+    <link href="css/vendor/slick.css" rel="stylesheet" />
+    <link href="css/vendor/slick-theme.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header></header>
+    <div class="intro-page">
+        <div class="container">
+            <h1>Nous contacter</h1>
+            <p>
+                Vous avez des questions, vous pouvez remplir le formulaire ci-dessous,
+                nous le soumettre et il nous fera plaisir d'entrer en communication avec vous.
+            </p>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <section class="keep-touch">
+            <div class="container">
+                <h2>Rester en contact!</h2>
+                <p>Envoyer nous vos coordonnées et nous vous tiendront au courant!</p>
+                <span class="dot-dash dark">.</span>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="keep-touch--white">
+                            <h4>Notre adresse</h4>
+                            <p>3000 ave. Boullé<br>Saint-Hyacinthe<br>(Québec)<br>J2S1H9</p>
+                            <h4>Appelez-nous</h4>
+                            <p>Local: 450 773-6800<br>Externe: 514 875-4445<br>Téléc: 450 773-9971</p>
+                            <h4>Courriel</h4>
+                            <p><a href="mailto:info@sthinformatique.com">info@sthinformatique.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="keep-touch--white">
+                            <form id="contact" class="needs-validation" action="mailto:info@sthinformatique.com" method="post" novalidate>
+                                <div class="row mb-2">
+                                    <label class="col-sm-3 form-check-label mb-3" for="prenom">*Nom:</label>
+                                    <div class="col-sm-9 position-relative">
+                                        <input type="text" class="form-control" placeholder="Entrer votre nom..." pattern="[A-Za-z]{2,}" required>
+                                        <div class="invalid-tooltip">
+                                            Veuillez entrer votre nom!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <label class="col-sm-3 form-check-label mb-3" for="prénom">*Prénom:</label>
+                                    <div class="col-sm-9 position-relative">
+                                        <input type="text" class="form-control" placeholder="Entrer votre prénom..." required>
+                                        <div class="invalid-tooltip">
+                                            Veuillez entrer votre prénom!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <label class="col-sm-3 form-check-label mb-3" for="courriel">*Courriel:</label>
+                                    <div class="col-sm-9 position-relative">
+                                        <input 
+                                               type="email" 
+                                               class="form-control" 
+                                               placeholder="Entrer votre courriel..." 
+                                               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                               required>
+                                        <div class="invalid-tooltip">
+                                            Veuillez entrer votre courriel selon le bon format!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <label class="col-sm-3 form-check-label mb-3" for="courriel">*Tél:</label>
+                                    <div class="col-sm-9 position-relative">
+                                        <input 
+                                               id="phone"
+                                               type="tel" 
+                                               class="form-control" 
+                                               placeholder="Entrer votre téléphone(ex: 514-234-1256)" 
+                                               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                               required>
+                                        <div class="invalid-tooltip">
+                                            Veuillez entrer votre téléphone selon le bon format!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-mb-2">
+                                    <label class="col-form-label" for="tempsappel">Meilleur moment pour vous appeler:</label>
+                                    <div class="col-sm-6">
+                                        <div class="form-check">
+                                            <input id="matin" class="form-check-input" name="tempsappel" type="radio">
+                                            <label class="form-check-label" for="matin">Matin</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input id="jour" class="form-check-input" name="tempsappel" type="radio">
+                                            <label class="form-check-label" for="jour">Jour</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input id="soir" class="form-check-input" name="tempsappel" type="radio">
+                                            <label class="form-check-label" for="soir">Soir</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-2" style="padding-top:30px">
+                                    <label class="form-check-label" for="prenom">Commentaires:</label>
+                                    <textarea id="commentaires" rows="5" placeholder="Saisir d'autre information..."></textarea>
+                                </div>
+                                <div class="row mb-2">
+                                    <button id="soumettre" class="button small" type="submit">Soumettre</button>
+                                    <button id="recommencer" class="button small" type="reset">Recommencer</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer></footer>
+
+    <script src="js/vendor/jquery-3.1.0.min.js"></script>
+    <script src="js/vendor/jquery.easing.min.js"></script>
+    <script src="js/vendor/tether.js"></script>
+    <script src="js/vendor/bootstrap.js"></script>
+    <script src="js/vendor/slick.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="/lib/jquery/jquery.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.js"></script>
+    <script>
+        $.get('_header.html', function (data) {
+            $('header').replaceWith(data);
+        });
+    </script>
+    <script>
+        $.get('_footer.html', function (data) {
+            $('footer').replaceWith(data);
+        });
+    </script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+    <script>
+        $(document).ready(function () {
+            //$('#soumettre').click(function () {
+            //    let nbjour = $('#nbparjour').val();
+            //    alert(nbjour);
+            //});
+            $('#recommencer').click(function () {
+                $('#contact').removeClass('was-validated')
+            })
+        })
+    </script>
+</body>
+</html>
